@@ -96,3 +96,6 @@ function playGame() {
         return "It's a draw!";
     }
 }
+
+//  Displaying the final result
+console.log(playGame());
