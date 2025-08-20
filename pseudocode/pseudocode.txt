@@ -1,0 +1,7 @@
+- Need to take the choice of the computer via a function and store it
+- Need to take the human choice via a function
+- The human choice should come via a prompt
+- The human and computer score must be saved
+- The condition must be checked; that who wins depending upon the various conditions
+- The conditions must be repeated for a number of times
+- The final result should be displayed
