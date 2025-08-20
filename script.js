@@ -64,3 +64,35 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 }
+
+//  Creating function to play 5 rounds and checking who is the final winner
+
+function playGame() {
+    playRound(getComputerChoice(), getHumanChoice());
+    console.log("Human Score:- "+humanScore);
+    console.log("Computer Score:- "+computerScore);
+
+    playRound(getComputerChoice(), getHumanChoice());
+    console.log("Human Score:- "+humanScore);
+    console.log("Computer Score:- "+computerScore);
+
+    playRound(getComputerChoice(), getHumanChoice());
+    console.log("Human Score:- "+humanScore);
+    console.log("Computer Score:- "+computerScore);
+
+    playRound(getComputerChoice(), getHumanChoice());
+    console.log("Human Score:- "+humanScore);
+    console.log("Computer Score:- "+computerScore);
+
+    playRound(getComputerChoice(), getHumanChoice());
+    console.log("Human Score:- "+humanScore);
+    console.log("Computer Score:- "+computerScore);
+
+    if (humanScore > computerScore) {
+        return 'Yay, You win!';
+    } else if (humanScore < computerScore) {
+        return 'Oops! You lose';
+    } else {
+        return "It's a draw!";
+    }
+}
