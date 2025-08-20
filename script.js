@@ -34,3 +34,33 @@ function getHumanChoice() {
 
 let humanScore      = 0;
 let computerScore   = 0;
+
+//  Creating function to make the human and computer play one round
+
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === 'Rock') {
+        if (computerChoice === 'Paper') {
+            computerScore++;
+        } else if (computerChoice === 'Scissor') {
+            humanScore++;
+        } else if (computerChoice === 'Rock') {
+            return 'Tie!';
+        }
+    } else if (humanChoice === 'Paper') {
+        if (computerChoice === 'Scissor') {
+            computerScore++;
+        } else if (computerChoice === 'Rock') {
+            humanScore++;
+        } else if (computerChoice === 'Paper') {
+            return 'Tie!';
+        }
+    } else if (humanChoice === 'Scissor') {
+        if (computerChoice === 'Rock') {
+            computerScore++;
+        } else if (computerChoice === 'Paper') {
+            humanScore++;
+        } else if (computerChoice == 'Scissor') {
+            return 'Tie!';
+        }
+    }
+}
