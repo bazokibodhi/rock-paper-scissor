@@ -29,3 +29,8 @@ function getHumanChoice() {
         return 'Syntax Error';
     }
 }
+
+//  Declaring and initializing variables to denote human and computer score
+
+let humanScore      = 0;
+let computerScore   = 0;
